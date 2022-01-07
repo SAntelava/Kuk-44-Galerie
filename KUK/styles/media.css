@@ -1,0 +1,15 @@
+@media only screen and (max-width: 800px){
+    nav ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: beige;
+        width: 100%;
+    }
+}
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
