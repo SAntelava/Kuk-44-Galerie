@@ -3,15 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
+
 nav {
     flex: 1;
-    text-align: right;
-
 }
 nav ul {
     display: inline-block;
@@ -27,10 +21,15 @@ a {
     color: black;
     cursor: pointer;
 }
-#search {
-    border-radius: 30px;
-    border: 2px solid black;
+.search {
+    border-radius: 30px; 
+    border: 2px solid #fdb400;
     cursor: pointer;
+    outline-offset: 0px;
+}
+.search:hover {
+    border: 2px solid black ;
+
 }
 a:hover{
     background: #fdb400;
@@ -41,6 +40,7 @@ a:hover{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 100px;
 }
 .row {
     display: flex;
@@ -76,8 +76,19 @@ body {
 .button:hover {
     background: rgb(247, 189, 127);
 }
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 1;
+    
+}
 .header .row {
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 .categories {
     margin: 70px 0;
@@ -140,11 +151,14 @@ h4 {
     background: #fdb400;
     color: black;
     font-size: 14px;
-    padding: 60px 0 30px;
+    padding: 35px 0 20px;
 }
-.footer h3 {
-    color: #fff;
-    margin: bottom 20px;
+.footer .container {
+    padding-top: 10px;
+}
+.footer h4 {
+    color: black;
+    margin: bottom 15px;
 }
 .footer-collum1 {
     min-width: 250px;
@@ -164,7 +178,8 @@ h4 {
 .footer-collum3 {
     min-width: 250px;
     margin-bottom: 20px;
-    flex-basis: 12%;
+    flex-basis: 15%;
+    justify-content: center;
     text-align: center;
 }
 .footer-collum4 {
@@ -172,9 +187,12 @@ h4 {
     margin-bottom: 20px;
     flex-basis: 12%;
     text-align: center;
+    justify-content: center;
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .footer-logo {
     margin-top: 20px;
@@ -184,9 +202,12 @@ ul {
 }
 .footer hr {
     border: none;
-    background: #fff;
-    height: 1px;
-    margin: 20px;
+    background: white;
+    height: 2px;
+    margin: 25px;
+}
+.footer ul a:hover {
+    color: white;
 }
 .copy {
     text-align: right;
@@ -194,3 +215,42 @@ ul {
     margin-right: 25px;
 
 }
+.contact{
+    padding-top: 90px;
+    /* padding: 4%; */
+    height: 400px;
+}
+.col-md-3{
+    background: #fdb400;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin: 10%;
+}
+.contact-info img{
+    margin-bottom: 20%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background:#0d6efd;
+    color: #fff;
+    font-weight: 600;
+    width: 20%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+.form-control { margin-bottom: 10px; }
